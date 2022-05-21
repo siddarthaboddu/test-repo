@@ -1,0 +1,92 @@
+#navbar-heading {
+    background: linear-gradient(.25turn, #002984, #757de8, #002984);
+    margin:0 !important;
+	padding: 0px !important;
+    min-height: 60px;
+}
+
+#main-heading {
+	margin:0 !important;
+	padding: 0px !important;
+}
+
+
+#main-body{
+    height: 100% !important;
+}
+
+#score-board{
+    text-align: center;
+}
+
+.min-height-heading{
+    min-height: 60px;
+}
+
+#heading-name{
+    font-weight: 700;
+    font-size: 2em;
+}
+
+#keyboard-layout{
+    background-color: #3f51b5;
+    height: 100% !important
+}
+
+.key-alphabet{
+    height: 150px !important;
+    border-radius: 20px;
+    margin: 10px 10px 10px 10px;
+}
+
+.alphabet-value{
+    text-align: center !important;
+    font-size: 120px !important;
+    line-height: 100% !important;
+    height: 100% !important;
+    border-radius: 10px !important;
+    background-color: #e3f2fd !important;
+    width: 100% !important;
+    border: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#enter-button{
+    background-color: #50C878 !important;
+}
+
+#back-button{
+    background-color: #ff5252 !important;
+}
+
+.guess-box{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#guess-word-board{
+    text-align: center;
+    align-items: center;
+}
+
+#guess-score{
+    margin-left: 5px;
+    background: linear-gradient(45deg, #002984, 30%, #757de8);
+    border-radius: 10px;
+    padding: 10px 5px 14px 5px;
+    color: white;
+    min-width: 50px !important;
+}
+
+#timer-box {
+    margin-bottom: 10px;
+}
+
+#timer-box-value{
+    text-align: center;
+}
+
+.hide{
+    display: none !important;
+}

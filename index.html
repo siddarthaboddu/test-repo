@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordle Clone!</title>
+
+    <script src="js/main.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
+    <script rel="stylesheet" href="js/main.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark py-4" id="navbar-heading" id="main-heading">
+        <div class="container-fluid min-height-heading">
+            <span class="navbar-brand mb-0 mx-auto min-height-heading" id="heading-name">WORD GAME</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="timer-box">
+            <div class="h2 mx-auto mt-2 row" id="timer-box-value">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    LEVEL <span id="level-value">1</span>
+                </div>
+                <div class="col-3">
+                    <button class="hide" id="next-level-button" onclick="moveToNextLevel()" style="float: right;background-color: #50C878;">Go to next
+                        level</button>
+                </div>
+
+            </div>
+            <div class="h2 mx-auto mt-2 row" id="timer-box-value">
+                <div class="col">Timer: <span id="timer-value">120</span></div>
+                <div class="col">TargetScore: <span id="target-score">100</span></div>
+            </div>
+            <div class="progress">
+                <div id="timer-progress" class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid">
+        <div class="h2 mx-auto mt-2" id="score-board">
+            <span>Total: </span><span id="total-score-value"> 0</span>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="h1 mx-auto mt-4 mb-4" id="guess-word-board">
+            <span id="guess-word"></span>
+            <span id="guess-score">0</span>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="keyboard-layout">
+        <div class="container">
+            <div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="key-alphabet">
+                            <div id="alphabet-0" class="alphabet-value" onclick="pressCharacter(0)">
+                                A
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="key-alphabet">
+                            <div id="alphabet-1" class="alphabet-value" onclick="pressCharacter(1)">
+                                A
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="key-alphabet">
+                            <div id="alphabet-2" class="alphabet-value" onclick="pressCharacter(2)">
+                                A
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="key-alphabet">
+                            <div id="alphabet-3" class="alphabet-value" onclick="pressCharacter(3)">
+                                A
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="key-alphabet">
+                            <div id="alphabet-4" class="alphabet-value" onclick="pressCharacter(4)">
+                                A
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="key-alphabet">
+                            <div id="alphabet-5" class="alphabet-value" onclick="pressCharacter(5)">
+                                A
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="key-alphabet">
+                            <div id="alphabet-6" class="alphabet-value" onclick="pressCharacter(6)">
+                                A
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="key-alphabet">
+                            <div id="alphabet-7" class="alphabet-value" onclick="pressCharacter(7)">
+                                A
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="key-alphabet">
+                            <div id="alphabet-8" class="alphabet-value" onclick="pressCharacter(8)">
+                                A
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="key-alphabet">
+                            <div id="back-button" class="alphabet-value" onclick="enterBack()">
+                                ⌫
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="key-alphabet">
+                            <div id='enter-button' class="alphabet-value" onclick="enterSubmit()">
+                                ✓
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
